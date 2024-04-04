@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}    
+  
+    <!--img src="{% static 'images/logo.png' %}" alt="logo" width="100px"-->
+    <h1 class="contents">Django MTV 내용정리</h1>
+   <br>
+    
+    
+    <div class="text">
+        <h2>Django MTV 패턴이란?</h2>
+        
+        장고는  <span class="MTV">MTV</span>(Model,Template,View)패턴을 기반으로하는 프레임워크이다.<br><br>
+        <span class="MTV">Model</span>은 데이터 모델을 의미 <br>
+        <span class="MTV">Template</span>는 사용자에게 보여지는 부분으로 인터페이스이다.<br> 
+        <span class="MTV">View</span>는 요청에따른 적절한 로직을 수행한다. 함수라고 생각하면 이해하기 편하다.
+        
+    
+        <h3>사용자가 url을 통해 보낸 request가 다시 reponse되는 과정</h3>
+        <ol>
+            <li>장고 서버로 사용자가 url을 통해 request가 들어옴</li><br>
+            <li>URL Conf를 통해 url을 분석하여 적당한 view를 매핑함</li><br>
+            <li>view는 요청에 따른 적절한 로직을 수행하여 model에 전달 </li><br>
+            <li>model은 db와 연결하여 view로 필요한 데이터를 보내줌 </li><br>
+            <li>template에서 인터페이스를 만듬</li><br>
+            <li>사용자에게 response</li>
+        </ol>
+        
+    </div>
+ 
+    
+
+{% endblock %}
+

@@ -1,0 +1,24 @@
+.contents{
+    color: rgb(255, 115, 0);
+    text-align: center;
+}
+
+.MTV{
+   color:aquamarine;
+}
+.text{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.second_contents{
+    
+    text-align: center;
+    
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+

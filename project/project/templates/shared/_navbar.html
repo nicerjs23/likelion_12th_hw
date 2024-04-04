@@ -1,0 +1,14 @@
+{% load static %}
+<nav class="navbar-container">
+    
+       <a class="navbar-link" href="#">
+            <img src="{% static 'images/logo.png' %}" alt="logo" width="110px">
+        </a>
+        <br>
+        <!-- mainpage 링크 연결 -->
+        <a class="navbar-link" href="{% url 'mainpage' %}">Main Page</a>
+        <br>
+        <!-- secondpage 링크 연결 -->
+        <a class="navbar-link" href="{% url 'secondpage' %}">Second Page</a>
+ 
+</nav>
